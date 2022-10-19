@@ -1,0 +1,74 @@
+% Latex template with some math formulas in English 
+
+\documentclass{article}
+\usepackage[slantfont, boldfont]{xeCJK}
+\usepackage{fullpage,amsmath,amsthm,amssymb}
+
+% Set English main font
+\setmainfont[ItalicFont={Times New Roman}]{Times New Roman}
+
+% Set Chinese main font 
+% In order to compile correctly, the font should be included in your operation system
+\setCJKmainfont[ItalicFont={FangSong}, BoldFont={SimHei}]{SimSun}
+\setCJKmonofont{SimSun}
+\setCJKsansfont{FangSong}
+\renewcommand\tablename{表}% Change table name
+\renewcommand\figurename{图}% Change figure name
+\renewcommand\refname{参考文献}
+%\renewcommand\bibname{参考文献} % for a book
+
+
+\newtheorem{thm}{定理}
+\newtheorem{rmk}{注记}[section]
+
+\title{这里是标题Title of the paper}
+\author{作者LeeeeeAndLv}
+\date{}
+
+\begin{document}
+	\maketitle
+	
+	\section{前言Introduction}
+	
+	In \cite{Au1900}, Author1 considered the problem of ...
+	
+	\begin{equation*}
+		x^2 + y^2 = z^2
+	\end{equation*}
+	
+	\begin{equation}\label{eq:GouGuThm}
+		x^2 + y^2 = z^2
+	\end{equation}
+	
+	\[
+	\left\{
+	\begin{aligned}
+		a x + b y = c, \\
+		d x + e y = g.
+	\end{aligned}
+	\right.
+	\]
+	
+	\begin{thm}
+		This is the first theorem. If conditions $A$ holds, i.e. $x\in \mathcal{X}$, then
+		\[
+		\int_\Omega u + \sum_{i=1}^\infty a_i + \oint_l \sqrt{\frac{\sin x}{\tan y}} = \bar{M}, \qquad \lim_{i\to \infty} a_i = 0.
+		\]
+	\end{thm}
+	
+	\begin{rmk}
+		This is the content of Remark 1. 
+	\end{rmk}
+	
+	
+	\section{国内外研究现状Preliminaries}
+	
+	\section{证明Proof of the main results}
+	
+	\section{结论Conclusions}
+	
+	\begin{thebibliography}{99}
+		\bibitem{Au1900}Author1, Title, {\it Journal Name}, 1900, 100(3), 432--456.  
+	\end{thebibliography}
+	
+\end{document}
