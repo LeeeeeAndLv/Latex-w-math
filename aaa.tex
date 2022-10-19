@@ -1,6 +1,9 @@
 \documentclass{article}
 \usepackage{fullpage,amsmath,amsthm,amssymb}
 
+\newtheorem{thm}{Theorem}
+\newtheorem{rmk}{Remark}[section]
+
 \title{Title}
 \author{LeeeeeAndLv}
 \date{}
@@ -12,11 +15,43 @@
 
 In \cite{Au1900}, Author1 considered the problem of ...
 
+\begin{equation*}
+	x^2 + y^2 = z^2
+\end{equation*}
+
+\begin{equation}\label{eq:GouGuThm}
+	x^2 + y^2 = z^2
+\end{equation}
+
+\[
+	\left\{
+	\begin{aligned}
+		a x + b y = c, \\
+		d x + e y = g.
+	\end{aligned}
+	\right.
+\]
+
+\begin{thm}
+	This is the first theorem. If conditions $A$ holds, i.e. $x\in \mathcal{X}$, then
+	\[
+		\int_\Omega u + \sum_{i=1}^\infty a_i + \oint_l \sqrt{\frac{\sin x}{\tan y}} = \bar{M}, \qquad \lim_{i\to \infty} a_i = 0.
+	\]
+\end{thm}
+
+\begin{rmk}
+	This is the content of Remark 1. 
+\end{rmk}
+
+
 \section{Preliminaries}
+
+\section{Proof of the main results}
 
 \section{Conclusions}
 
 \begin{thebibliography}{99}
 	\bibitem{Au1900}Author1, Title, {\it Journal Name}, 1900, 100(3), 432--456.  
 \end{thebibliography}
+
 \end{document}
